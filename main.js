@@ -35,7 +35,6 @@ const pmremGenerator = new THREE.PMREMGenerator(renderer);
 pmremGenerator.compileEquirectangularShader();
 
 
- // Adjust pan speed
 
 const composer = new EffectComposer(renderer);
 const renderPass = new RenderPass(scene, camera);
