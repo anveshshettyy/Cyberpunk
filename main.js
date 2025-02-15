@@ -44,7 +44,6 @@ const rgbShiftPass = new ShaderPass(RGBShiftShader);
 rgbShiftPass.uniforms['amount'].value = 0.0015;
 composer.addPass(rgbShiftPass);
 
-// Load HDRI environment map
 new RGBELoader()
   .load('https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/pond_bridge_night_1k.hdr', function(texture){
     const envMap = pmremGenerator.fromEquirectangular(texture).texture;
