@@ -83,6 +83,6 @@ window.addEventListener('resize', () => {
 
 function animate(){
   window.requestAnimationFrame(animate);
-  composer.render(); // Use composer.render() instead of renderer.render()
+  composer.render(); 
 }
 animate();
